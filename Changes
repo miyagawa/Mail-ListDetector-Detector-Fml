@@ -1,5 +1,9 @@
 Revision history for Perl extension Mail::ListDetector::Detector::Fml.
 
+0.03  Thu Jan  3 11:26:12 JST 2002
+	- shuts off warning
+	  (Thanks to Michael Stevens <mstevens@etla.org>)
+
 0.02  Sun Nov 11 22:55:19 JST 2001
 	- added dependency for Mail::ListDetector in Makefile.PL
 	  (Thanks to Jonathan Stowe)
