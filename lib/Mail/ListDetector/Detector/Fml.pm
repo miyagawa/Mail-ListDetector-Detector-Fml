@@ -2,7 +2,7 @@ package Mail::ListDetector::Detector::Fml;
 
 use strict;
 use vars qw($VERSION);
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 use base qw(Mail::ListDetector::Detector::Base);
 use URI;
