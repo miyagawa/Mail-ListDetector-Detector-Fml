@@ -8,7 +8,7 @@ use base qw(Mail::ListDetector::Detector::Base);
 use URI;
 
 BEGIN {
-    # install me begore RFC2369
+    # install me before RFC2369
     use Mail::ListDetector;
     @Mail::ListDetector::DETECTORS = map {
 	$_ eq 'Mail::ListDetector::Detector::RFC2369'
@@ -19,7 +19,7 @@ BEGIN {
 sub match {
     my($self, $message) = @_;
     my $head = $message->head;
-    my $mlserver = $head->get('X-MLServer');
+    my $mlserver = $head->get('X-MLServer') or return;
     $mlserver =~ /^fml \[(fml [^\]]*)\]/ or return;
 
     # OK, this is FML message
